@@ -1,12 +1,13 @@
 [
   {
-    "title": "Portfolio",
+    "title": "MyWork",
+    "slug": "1",
     "software": "Figma, React JS & Styled Components",
     "image": "./images/portfolio-page.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id."
   },
   {
-    "title": "Doggie Walks",
+    "title": "DoggieWalks",
     "software": "Figma, React JS & Styled Components",
     "image": "./images/doggie-walks-home.png",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id."

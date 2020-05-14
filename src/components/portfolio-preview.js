@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'gatsby';
 import Image from "gatsby-image"
 
-const PortfolioPreview = ({id, title, description, image}) => (
+const PortfolioPreview = ({id, title, slug, description, image}) => (
   <article>
     <Link to={`/${title}`}>
       <Image fluid={image} alt={title}/>
