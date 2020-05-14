@@ -1,11 +1,11 @@
 import React from "react"
 import Navigation from '../components/navigation'
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header>
+    <footer>
       <Navigation/>
-    </header>
+    </footer>
   )
 }
-export default Header
+export default Footer
