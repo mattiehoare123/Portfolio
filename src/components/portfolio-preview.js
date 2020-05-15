@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Image from "gatsby-image"
 
 const PortfolioPreview = ({id, title, slug, description, image}) => (
-  <article className="project-preview">
+  <section className="project-preview">
     <Link to={`/${title}`}>
       <figure>
         <Image fluid={image} alt={title}/>
@@ -17,6 +17,6 @@ const PortfolioPreview = ({id, title, slug, description, image}) => (
       {/*Read more arrow button*/}
       <button class="read-more">Read more &rarr;</button>
     </Link>
-  </article>
+  </section>
 )
 export default PortfolioPreview

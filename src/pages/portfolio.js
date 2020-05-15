@@ -28,20 +28,22 @@ const Portfolio = () => {
   return (
     <Layout>
       <h1>Portfolio</h1>
-      {/*Loop through projects in the projects variable*/}
-      {projects.map(({node: project}) => {
-        const title = project.title;
-        const image = project.image.childImageSharp.fluid;
-        const description = project.description;
+      <article className="portfolio">
+        {/*Loop through projects in the projects variable*/}
+        {projects.map(({node: project}) => {
+          const title = project.title;
+          const image = project.image.childImageSharp.fluid;
+          const description = project.description;
 
-        return (
-            <PortfolioPreview
-              title={title}
-              image={image}
-              description={description}
-              />
-          );
-      })}
+          return (
+              <PortfolioPreview
+                title={title}
+                image={image}
+                description={description}
+                />
+            );
+        })}
+      </article>
     </Layout>
   )
 }

@@ -3,14 +3,20 @@ import { Link } from 'gatsby';
 import Image from "gatsby-image"
 
 const Project = ({title, description, image, software}) => (
-  <section>
-    <h1>{title}</h1>
-    <Image fluid={image} alt={title}/>
-    <a href="www.example.com">View Live</a>
-    <p>{software}</p>
-    <h2>Description</h2>
-    <p>{description}</p>
-  </section>
+  <React.Fragment>
+    <section className="project-header">
+      <Image fluid={image} alt={title}/>
+      <h1>{title}</h1>
+      <a href="www.example.com">
+        <button className="view-live">View Live</button>
+      </a>
+      <p>{software}</p>
+    </section>
+    <section className="project-process">
+      <h2>Description</h2>
+      <p>{description}</p>
+    </section>
+  </React.Fragment>
 )
 
 export default Project

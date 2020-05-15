@@ -1,0 +1,43 @@
+.about-me {
+  @include ipad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section {
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    @include ipad {
+      order: 1;
+      grid-column: 2/3;
+    }
+  }
+
+  div {
+    height: 300px;
+    width: 300px;
+    background: red;
+    position: relative;
+
+    @include ipad {
+      order: 0;
+      grid-column: 1/2;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      height: inherit;
+      width: inherit;
+      border: 1px solid $clr-blue;
+      // Make it go behind the image
+      z-index: -1;
+    }
+  }
+}

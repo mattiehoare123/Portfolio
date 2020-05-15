@@ -4,3 +4,10 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Media Queries */
+@mixin ipad($width: 767px) {
+  @media(min-width: $width) {
+    @content;
+  }
+}

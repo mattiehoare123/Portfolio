@@ -1,0 +1,33 @@
+.project-header {
+
+  h1, p {
+    color: $clr-white;
+  }
+
+  h1 {
+    &:after {
+      width: 0;
+      height: 0;
+    }
+  }
+
+
+}
+
+.project-process {
+
+  h2 {
+    font-weight: $fw-bold;
+    font-size: 2rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 15px;
+      width: 5px;
+      background: $clr-blue;
+      margin-right: .2em;
+    }
+  }
+
+}
