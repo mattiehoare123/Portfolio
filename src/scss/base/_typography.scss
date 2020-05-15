@@ -33,19 +33,19 @@ h1 {
   }
 }
 
-h2 {
-  font-weight: $fw-bold;
+// h2 {
+//   font-weight: $fw-bold;
+//
+//   &::before {
+//     content: '';
+//     display: inline-block;
+//     height: 10px;
+//     width: 5px;
+//     background: $clr-blue;
+//   }
+// }
 
-  &::before {
-    content: '';
-    display: inline-block;
-    height: 10px;
-    width: 5px;
-    background: $clr-blue;
-  }
-}
-
-p, label {
+p, label, button {
   font-size: 1.5rem;
   color: $clr-txt-black;
   line-height: 1.6;

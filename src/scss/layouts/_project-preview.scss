@@ -1,0 +1,39 @@
+.project-preview {
+
+  margin-bottom: 4em;
+
+  figure, a, h2, p {
+    margin-bottom: 7px;
+  }
+  /*
+  As data is is pulled from graphql target each
+  article to change figure background-color
+  */
+  &:nth-of-type(2) {
+    figure {
+      background-color: #E9785D!important;
+    }
+  }
+
+
+  figure {
+    @include flex;
+    height: 250px;
+    border-radius: .5em;
+
+    &:first-child {
+      background-color: $clr-blue;
+    }
+    /*Preview Project Image*/
+    .gatsby-image-wrapper {
+      height: 150px;
+      width: 250px;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $clr-txt-black;
+  }
+
+}

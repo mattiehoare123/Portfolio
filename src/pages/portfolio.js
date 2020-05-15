@@ -27,18 +27,20 @@ const Portfolio = () => {
   const projects = data.allProjectsJson.edges;
   return (
     <Layout>
+      <h1>Portfolio</h1>
+      {/*Loop through projects in the projects variable*/}
       {projects.map(({node: project}) => {
         const title = project.title;
         const image = project.image.childImageSharp.fluid;
         const description = project.description;
 
         return (
-          <PortfolioPreview
-            title={title}
-            image={image}
-            description={description}
-            />
-        );
+            <PortfolioPreview
+              title={title}
+              image={image}
+              description={description}
+              />
+          );
       })}
     </Layout>
   )
