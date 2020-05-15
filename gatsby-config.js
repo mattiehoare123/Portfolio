@@ -23,6 +23,17 @@ module.exports = {
         }
       }
     },
+    {
+    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    options: {
+      fonts: [
+        {
+          family: `Poppins`,
+          variants: [`400`, `700`]
+        },
+      ],
+     },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -6,18 +6,20 @@ import { Link } from 'gatsby';
 const IndexPage = () => (
   <Layout>
     {/*Hero*/}
-    <section>
-      <p>I'm</p>
-      <h1><span>Matt</span>hew Hoare</h1>
-      <p>Front End Web Developer</p>
-      <Link to="/portfolio">
-        <button>My Portfolio</button>
-      </Link>
+    <section className="banner">
+      <p>
+        I'm
+        <h1><span>Matt</span>hew Hoare</h1>
+        Front End Web Developer
+        <Link to="/portfolio">
+          <button className="view-work">My Portfolio</button>
+        </Link>
+      </p>
     </section>
     <Icons/>
     {/*About Me*/}
     <section>
-      <h2>About Me</h2>
+      <h1>About Me</h1>
       <p>
         I’m a front end web developer from Liverpool, currently in my final year of study, doing web design and development at Edge Hill University.
         I started getting into web development around four years and have loved it ever since. I like how the industry is always evolving and new

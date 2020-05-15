@@ -1,0 +1,32 @@
+.banner {
+  background: $clr-light-grey;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+
+  h1 {
+    color: $clr-txt-black;
+    font-size: 3rem;
+
+    span {
+      padding: 0 .1em;
+      background: $clr-blue;
+      color: $clr-white;
+    }
+
+    &::after {
+      content: '';
+      width: 0px;
+      height: 0px;
+      margin: 0;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}

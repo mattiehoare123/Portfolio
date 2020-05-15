@@ -1,0 +1,83 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; //Easy for px to rem converison
+}
+/* Typography */
+body {
+  font-family: $font;
+}
+
+main {
+  padding: 0 2em;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: $clr-blue;
+  font-weight: $fw-bold;
+  font-size: 2.5rem;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 50px;
+    background: $clr-dark-grey;
+    margin-bottom: 1em;
+  }
+}
+
+h2 {
+  font-weight: $fw-bold;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 5px;
+    background: $clr-blue;
+  }
+}
+
+p, label {
+  font-size: 1.5rem;
+  color: $clr-txt-black;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input, textarea {
+  padding: .3em;
+  border: 1px solid $clr-border-grey;
+  border-radius: .2em;
+}
+
+img {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  cursor: pointer;
+}

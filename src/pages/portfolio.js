@@ -11,7 +11,6 @@ const Portfolio = () => {
           node {
             id
             title
-            slug
             description
             image {
               childImageSharp {
@@ -30,7 +29,6 @@ const Portfolio = () => {
     <Layout>
       {projects.map(({node: project}) => {
         const title = project.title;
-        const slug = project.slug;
         const image = project.image.childImageSharp.fluid;
         const description = project.description;
 

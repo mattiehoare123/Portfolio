@@ -1,0 +1,37 @@
+footer {
+  height: 100px;
+  padding: 1em;
+  background: $clr-light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    padding: .2em;
+  }
+
+  nav {
+    /* Make li go across full width of screen*/
+    width: 100%;
+    &::before  {
+      content: '';
+      display: block;
+      margin: 1em auto;
+      height: 2px;
+      width: 20px;
+      background: $clr-blue;
+    }
+    display: block;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        font-size: 1.5rem;
+        color: $clr-txt-black;
+      }
+    }
+  }
+}
