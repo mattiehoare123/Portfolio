@@ -1,5 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
+import Icons from "../components/social-media"
+import Phone from "../images/phone.svg"
+import Email from "../images/email.svg"
 
 const Contact = () => {
   return (
@@ -16,16 +19,18 @@ const Contact = () => {
       </form>
       <article>
         <section>
+          <Phone/>
           <p>Call Me</p>
-          <a href="tel:1-847-555-5555">1-847-555-5555</a>
+          <a href="tel:1-847-555-5555">07887770657</a>
         </section>
         <section>
+          <Email/>
           <p>Email Me</p>
           <a href="mailto:matthoare5@hotmail.co.uk?subject=Portfolio">matthoare5@hotmail.co.uk</a>
         </section>
         <section>
           <p>Follow Me</p>
-          <p>Social Media Icons</p>
+          <Icons/>
         </section>
       </article>
     </Layout>

@@ -9,6 +9,7 @@ export const query = graphql`
     projectsJson(title: {eq: $title}) {
       title
       description
+      software
       image {
         childImageSharp {
           fluid {
@@ -26,6 +27,7 @@ const ProjectTemplate = ({data}) => {
   const title = project.title;
   const description = project.description;
   const image = project.image.childImageSharp.fluid;
+  const sofware = project.software;
 
   return (
     <Layout>
@@ -33,6 +35,7 @@ const ProjectTemplate = ({data}) => {
         title={title}
         description={description}
         image={image}
+        software={sofware}
       />
     </Layout>
   )

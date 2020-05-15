@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Icons from "../components/social-media"
 import { Link } from 'gatsby';
 
 const IndexPage = () => (
@@ -13,9 +14,7 @@ const IndexPage = () => (
         <button>My Portfolio</button>
       </Link>
     </section>
-    <aside>
-      Social Media
-    </aside>
+    <Icons/>
     {/*About Me*/}
     <section>
       <h2>About Me</h2>

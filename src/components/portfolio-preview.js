@@ -12,7 +12,7 @@ const PortfolioPreview = ({id, title, slug, description, image}) => (
     </Link>
     <p>{description}</p>
     <Link to={`/${title}`}>
-      <button>View this project &rarr;</button>
+      <button>Read more</button>
     </Link>
   </article>
 )

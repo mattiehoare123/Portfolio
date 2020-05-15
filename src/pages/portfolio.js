@@ -16,7 +16,7 @@ const Portfolio = () => {
             image {
               childImageSharp {
                 fluid {
-                  srcSet
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -38,7 +38,6 @@ const Portfolio = () => {
           <PortfolioPreview
             title={title}
             image={image}
-            slug={slug}
             description={description}
             />
         );
