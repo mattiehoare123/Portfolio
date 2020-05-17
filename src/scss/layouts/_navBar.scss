@@ -2,9 +2,43 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 2.1em;
+  padding: 1em 0;
   width: 100%;
+  @include container;
+
   nav {
     display: none;
+
+    @include ipad {
+      display: block;
+    }
+
+    ul {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-between;
+      width: 350px;
+
+      li {
+        &:hover {
+          border-bottom: 8px solid $clr-blue;
+        }
+
+        &:last-child {
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    @include ipad {
+      display: none;
+    }
+
+
+  }
+
+  .active {
+    border-bottom: 8px solid $clr-blue;
   }
 }

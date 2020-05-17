@@ -1,6 +1,6 @@
 .banner {
   display: grid;
-  grid-template-columns: 25px auto 25px;
+  grid-template-columns: 35px auto 35px;
   align-items: center;
 
   p {
@@ -13,6 +13,10 @@
     flex-direction: column;
     width: 85vw;
     margin: 0 auto;
+    // To center profile in the middle
+    div {
+      margin: 0 auto;
+    }
 
     h1 {
       color: $clr-txt-black;
@@ -38,7 +42,12 @@
   }
 
   aside {
-
-    grid-column: 3/4;
+    position: relative;
+    top: 10000px;
+    @include ipad {
+      top: 0px;
+      display: block;
+      grid-column: 3/4;
+    }
   }
 }

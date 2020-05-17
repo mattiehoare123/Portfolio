@@ -27,7 +27,7 @@ const Portfolio = () => {
   const projects = data.allProjectsJson.edges;
   return (
     <Layout>
-      <h1>Portfolio</h1>
+      <h1 class="portfolio-title">Portfolio</h1>
       <article className="portfolio">
         {/*Loop through projects in the projects variable*/}
         {projects.map(({node: project}) => {

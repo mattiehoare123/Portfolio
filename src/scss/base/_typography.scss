@@ -16,6 +16,8 @@ body {
 main {
   padding: 0 2em;
   margin-bottom: 50px;
+  @include ipad {
+  }
 }
 
 h1 {
@@ -33,7 +35,7 @@ h1 {
   }
 }
 
-p, label, button, input, textarea {
+p, label, button, input, textarea, li, a {
   font-size: 1.5rem;
   color: $clr-txt-black;
   line-height: 1.6;

@@ -8,12 +8,14 @@ const IndexPage = () => (
     {/*Hero*/}
     <section className="banner">
       <p>
-        I'm
-        <h1><span>Matt</span>hew Hoare</h1>
-        Front End Web Developer
-        <Link to="/portfolio">
-          <button className="view-work">My Portfolio</button>
-        </Link>
+        <div>
+          I'm
+          <h1><span>Matt</span>hew Hoare</h1>
+          Front End Web Developer
+          <Link to="/portfolio">
+            <button className="view-work">My Portfolio</button>
+          </Link>
+        </div>
       </p>
       <Icons/>
     </section>

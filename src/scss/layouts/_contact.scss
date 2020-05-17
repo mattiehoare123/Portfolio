@@ -1,0 +1,10 @@
+.contact {
+  @include container;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 30px;
+
+  h1 {
+    grid-column: 1/-1;
+  }
+}

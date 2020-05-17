@@ -1,7 +1,10 @@
 .about-me {
+  padding-top: 2em;
   @include ipad {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    @include container;
   }
 
   section {
@@ -11,6 +14,7 @@
     }
 
     @include ipad {
+      margin-top: 3em;
       order: 1;
       grid-column: 2/3;
     }

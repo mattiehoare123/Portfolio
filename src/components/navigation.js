@@ -8,16 +8,16 @@ const Navigation = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" activeClassName="active">Home</Link>
           </li>
           <li>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio" activeClassName="active">Portfolio</Link>
           </li>
           <li>
-            <a href="#">CV</a>
+            <a href="../images/Matthew-Hoare-CV.pdf" target="_target">CV</a>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" activeClassName="active">Contact</Link>
           </li>
         </ul>
       </nav>
