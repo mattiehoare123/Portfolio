@@ -13,7 +13,8 @@ const IndexPage = () => (
           <h1><span>Matt</span>hew Hoare</h1>
           Front End Web Developer
           <Link to="/portfolio">
-            <button className="view-work">My Portfolio</button>
+            <button className="banner-cta">My Portfolio</button>
+            <button className="banner-cta">My CV</button>
           </Link>
         </div>
       </p>

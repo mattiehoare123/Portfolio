@@ -2,6 +2,9 @@ aside {
   svg {
     display: block;
     height: 25px;
+    @include laptop {
+      height: 35px;
+    }
     margin-bottom: 1em;
   }
 }

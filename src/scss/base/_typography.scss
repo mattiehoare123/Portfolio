@@ -14,21 +14,25 @@ body {
 }
 
 main {
-  padding: 0 2em;
   margin-bottom: 50px;
-  @include ipad {
-  }
 }
 
 h1 {
   color: $clr-blue;
   font-weight: $fw-bold;
   font-size: 2.5rem;
+  @include laptop {
+    font-size: 3.5rem;
+  }
 
   &::after {
     content: '';
     display: block;
     height: 5px;
+    @include laptop {
+      width: 70px;
+      height: 10px;
+    }
     width: 50px;
     background: $clr-dark-grey;
     margin-bottom: 1em;
@@ -37,6 +41,9 @@ h1 {
 
 p, label, button, input, textarea, li, a {
   font-size: 1.5rem;
+  @include laptop {
+    font-size: 1.7rem;
+  }
   color: $clr-txt-black;
   line-height: 1.6;
 }

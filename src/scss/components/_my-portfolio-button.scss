@@ -1,8 +1,15 @@
-.view-work {
-  margin-top: .3em;
+.banner-cta {
+  margin: .3em 1em 0 0;
   padding: .2em .5em;
   font-size: 1.5rem;
+  @include laptop {
+    font-size: 2rem;
+  }
   border: 2px solid $clr-blue;
   color: $clr-blue;
-  display: block;
+
+  &:hover {
+    background: $clr-blue;
+    color: $clr-white;
+  }
 }

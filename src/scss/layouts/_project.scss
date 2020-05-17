@@ -1,11 +1,29 @@
 .project-header {
+  height: 30vh;
+  @include laptop {
+    height: 60vh;
+  }
+  position: relative;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    padding-left: 2em;
+  }
+
 
   h1, p {
+    margin-bottom: 5px;
+    align-items: center;
     color: $clr-white;
   }
 
   h1 {
+    // Resetting H1 from typography
     &:after {
+      margin: 0;
       width: 0;
       height: 0;
     }
@@ -15,7 +33,8 @@
 }
 
 .project-process {
-
+  padding-top: 1em;
+  @include container;
   h2 {
     font-weight: $fw-bold;
     font-size: 2rem;

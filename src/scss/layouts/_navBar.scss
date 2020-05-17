@@ -20,6 +20,8 @@ header {
       width: 350px;
 
       li {
+          //So on hover the border doesn't push the li elements up
+          border-bottom: 8px solid transparent;
         &:hover {
           border-bottom: 8px solid $clr-blue;
         }

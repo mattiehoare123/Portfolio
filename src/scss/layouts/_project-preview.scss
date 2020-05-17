@@ -18,6 +18,9 @@
   figure {
     @include flex;
     height: 250px;
+    @include laptop {
+      height: 300px;
+    }
     border-radius: .5em;
 
     &:first-child {
@@ -27,12 +30,20 @@
     .gatsby-image-wrapper {
       height: 150px;
       width: 250px;
+      @include laptop {
+        height: 200px;
+        width: 300px;
+      }
     }
   }
 
   h2 {
     font-size: 2rem;
     color: $clr-txt-black;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
 }
