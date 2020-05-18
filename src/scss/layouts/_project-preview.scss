@@ -14,6 +14,12 @@
     }
   }
 
+  &:nth-of-type(3) {
+    figure {
+      background-color: #C9C9C9!important;
+    }
+  }
+
 
   figure {
     @include flex;

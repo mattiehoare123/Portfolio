@@ -1,15 +1,48 @@
 [
   {
-    "title": "MyWork",
+    "title": "My Portfolio",
     "slug": "1",
     "software": "Figma, React JS & Styled Components",
-    "image": "./images/portfolio-page.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id."
+    "image": "./images/portfolio-laptop.png",
+    "background": "./images/portfolio-background.jpg",
+    "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id.",
+    "personaTitle": "Persona",
+    "personaDescription": "Persona Descritpion",
+    "sketchTitle": "Sketch",
+    "sketchDescription": "Sketch Description",
+    "wireframeTitle": "Wireframe",
+    "wireframeDescription": "Wireframe Description",
+    "fidelityTitle": "High Fidelity",
+    "fidelityDescription": "High Fidelity Description"
   },
   {
-    "title": "DoggieWalks",
+    "title": "Doggie Walks",
     "software": "Figma, React JS & Styled Components",
-    "image": "./images/doggie-background.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id."
+    "image": "./images/doggie-walks-website.png",
+    "background": "./images/doggie-background.jpg",
+    "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id.",
+    "personaTitle": "Persona",
+    "personaDescription": "Persona Descritpion",
+    "sketchTitle": "Sketch",
+    "sketchDescription": "Sketch Description",
+    "wireframeTitle": "Wireframe",
+    "wireframeDescription": "Wireframe Description",
+    "fidelityTitle": "High Fidelity",
+    "fidelityDescription": "High Fidelity Description"
+  },
+  {
+    "title": "Web Responsive Tester",
+    "software": "Javascript, Gulp & SCSS",
+    "image": "./images/responsive-website.png",
+    "background": "./images/responsive-tester-background.jpg",
+    "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id.",
+    "personaTitle": "Persona",
+    "personaDescription": "Persona Descritpion",
+    "sketchTitle": "Sketch",
+    "sketchDescription": "Sketch Description",
+    "wireframeTitle": "Wireframe",
+    "wireframeDescription": "Wireframe Description",
+    "fidelityTitle": "High Fidelity",
+    "fidelityDescription": "High Fidelity Description"
   }
 ]

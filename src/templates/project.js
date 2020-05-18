@@ -8,8 +8,23 @@ export const query = graphql`
   query($title: String!) {
     projectsJson(title: {eq: $title}) {
       title
-      description
+      outline
       software
+      personaTitle
+      personaDescription
+      sketchTitle
+      sketchDescription
+      wireframeTitle
+      wireframeDescription
+      fidelityTitle
+      fidelityDescription
+      background {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       image {
         childImageSharp {
           fluid {
@@ -25,17 +40,35 @@ export const query = graphql`
 const ProjectTemplate = ({data}) => {
   const project = data.projectsJson;
   const title = project.title;
-  const description = project.description;
+  const outline = project.outline;
   const image = project.image.childImageSharp.fluid;
-  const sofware = project.software;
+  const software = project.software;
+  const background = project.background.childImageSharp.fluid;
+  const personaTitle = project.personaTitle;
+  const personaDescription = project.personaDescription;
+  const sketchTitle = project.sketchTitle;
+  const sketchDescription = project.sketchDescription;
+  const wireframeTitle = project.wireframeTitle;
+  const wireframeDescription = project.wireframeDescription
+  const fidelityTitle = project.fidelityTitle
+  const fidelityDescription = project.fidelityDescription
 
   return (
     <Layout>
       <Project
         title={title}
-        description={description}
+        outline={outline}
         image={image}
-        software={sofware}
+        software={software}
+        background={background}
+        personaTitle={personaTitle}
+        personaDescription={personaDescription}
+        sketchTitle={sketchTitle}
+        sketchDescription={sketchDescription}
+        wireframeTitle={wireframeTitle}
+        wireframeDescription={wireframeDescription}
+        fidelityTitle={fidelityTitle}
+        fidelityDescription={fidelityDescription}
       />
     </Layout>
   )

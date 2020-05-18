@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'gatsby';
 import Image from "gatsby-image"
 
-const PortfolioPreview = ({id, title, slug, description, image}) => (
+const PortfolioPreview = ({id, title, outline, image}) => (
   <section className="project-preview">
     <Link to={`/${title}`}>
       <figure>
@@ -12,10 +12,10 @@ const PortfolioPreview = ({id, title, slug, description, image}) => (
     <Link to={`/${title}`}>
       <h2>{title}</h2>
     </Link>
-    <p>{description}</p>
+    <p>{outline}</p>
     <Link to={`/${title}`}>
       {/*Read more arrow button*/}
-      <button class="read-more">Read more <span>&rarr;</span></button>
+      <button class="read-more">Read more &rarr;</button>
     </Link>
   </section>
 )

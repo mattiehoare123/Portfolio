@@ -3,4 +3,9 @@
   border: 2px solid $clr-white;
   color: $clr-white;
   padding: .2em .5em;
+
+  &:hover {
+    background: $clr-white;
+    color: $clr-blue;
+  }
 }

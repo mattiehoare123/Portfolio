@@ -11,7 +11,7 @@ const Portfolio = () => {
           node {
             id
             title
-            description
+            outline
             image {
               childImageSharp {
                 fluid {
@@ -27,19 +27,19 @@ const Portfolio = () => {
   const projects = data.allProjectsJson.edges;
   return (
     <Layout>
-      <h1 class="portfolio-title">Portfolio</h1>
+      <h1 className="portfolio-title">Portfolio</h1>
       <article className="portfolio">
         {/*Loop through projects in the projects variable*/}
         {projects.map(({node: project}) => {
           const title = project.title;
           const image = project.image.childImageSharp.fluid;
-          const description = project.description;
+          const outline = project.outline;
 
           return (
               <PortfolioPreview
                 title={title}
                 image={image}
-                description={description}
+                outline={outline}
                 />
             );
         })}
