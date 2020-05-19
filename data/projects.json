@@ -6,14 +6,14 @@
     "image": "./images/portfolio-laptop.png",
     "background": "./images/portfolio-background.jpg",
     "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id.",
-    "personaTitle": "Persona",
-    "personaDescription": "Persona Descritpion",
-    "sketchTitle": "Sketch",
-    "sketchDescription": "Sketch Description",
-    "wireframeTitle": "Wireframe",
-    "wireframeDescription": "Wireframe Description",
-    "fidelityTitle": "High Fidelity",
-    "fidelityDescription": "High Fidelity Description"
+    "personaTitle": "Who wants to hire me?",
+    "personaDescription": "Proto personas were done to see what type of user’s would be visiting my site",
+    "sketchTitle": "Get the ideas out of my head",
+    "sketchDescription": "Sketching was done to get the ideas I had for the site onto to paper ",
+    "wireframeTitle": "How will these ideas look?",
+    "wireframeDescription": "The sketches were turned into wireframes to see how they would look when scaled ",
+    "fidelityTitle": "Turn design into code ",
+    "fidelityDescription": "The wireframes were turned into high fidelity design to be exported into Zeplin which would give me the CSS required for the site "
   },
   {
     "title": "Doggie Walks",
@@ -21,14 +21,14 @@
     "image": "./images/doggie-walks-website.png",
     "background": "./images/doggie-background.jpg",
     "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id.",
-    "personaTitle": "Persona",
-    "personaDescription": "Persona Descritpion",
-    "sketchTitle": "Sketch",
-    "sketchDescription": "Sketch Description",
-    "wireframeTitle": "Wireframe",
-    "wireframeDescription": "Wireframe Description",
-    "fidelityTitle": "High Fidelity",
-    "fidelityDescription": "High Fidelity Description"
+    "personaTitle": "Who will use the site?",
+    "personaDescription": "Proto personas were done to understand a user’s needs and pain points ",
+    "sketchTitle": "Features to meet the user’s needs",
+    "sketchDescription": "Sketches were done to think of ideas that would meet the user’s needs ",
+    "wireframeTitle": "Turn ideas into design ",
+    "wireframeDescription": "The sketches were refined and turned into wireframes to be able to visualize the design",
+    "fidelityTitle": "Gain feedback from the client",
+    "fidelityDescription": "The wireframes were turned into high fidelity designs to gain feedback of the client on the designs"
   },
   {
     "title": "Web Responsive Tester",
@@ -36,13 +36,13 @@
     "image": "./images/responsive-website.png",
     "background": "./images/responsive-tester-background.jpg",
     "outline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin est ac cras ipsum orci id.",
-    "personaTitle": "Persona",
-    "personaDescription": "Persona Descritpion",
-    "sketchTitle": "Sketch",
-    "sketchDescription": "Sketch Description",
-    "wireframeTitle": "Wireframe",
-    "wireframeDescription": "Wireframe Description",
-    "fidelityTitle": "High Fidelity",
-    "fidelityDescription": "High Fidelity Description"
+    "personaTitle": "How will a web developer use this tool?",
+    "personaDescription": "To understand a web developer’s need for the site proto persona was done to identify their needs and pain points",
+    "sketchTitle": "A new approach",
+    "sketchDescription": "Sketches were done to see how I could display multiple iframes on a screen at once",
+    "wireframeTitle": "Will the ideas work when scaled",
+    "wireframeDescription": "The sketches were turned into wireframes to identify if the idea worked on a desktop",
+    "fidelityTitle": "Gain feedback on the idea from the client",
+    "fidelityDescription": "The wireframe was turned into high fidelity design to gain comments on the design I had created and the workflow"
   }
 ]

@@ -1,29 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
-import Icons from "../components/social-media"
-import { Link } from 'gatsby';
+import Banner from "../components/banner"
 
 const IndexPage = () => (
   <Layout>
     {/*Hero*/}
-    <section className="banner">
-      <p>
-        <div>
-          I'm
-          <h1><span>Matt</span>hew Hoare</h1>
-          Front End Web Developer
-          <Link to="/portfolio">
-            <button className="banner-cta">My Portfolio</button>
-            <button className="banner-cta">My CV</button>
-          </Link>
-        </div>
-      </p>
-      <Icons/>
-    </section>
+    <Banner/>
     {/*About Me*/}
     <article className="about-me">
       <h1>About Me</h1>
-      <section>
+      {/*Gatsby plugin to fade in elements on scroll*/}
+      <section data-sal="slide-left" data-sal-duration="500">
         <p>
           I’m a front end web developer from Liverpool, currently in my final year of study, doing web design and development at Edge Hill University.
           I started getting into web development around four years and have loved it ever since. I like how the industry is always evolving and new
@@ -39,7 +26,7 @@ const IndexPage = () => (
           coding, I like to DJ and play a few 80’s classic’s. I guess that may save you some money off your next Christmas party.
         </p>
       </section>
-      <div>
+      <div data-sal="slide-right" data-sal-duration="500">
       </div>
     </article>
 

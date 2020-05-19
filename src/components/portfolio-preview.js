@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 const PortfolioPreview = ({id, title, outline, image}) => (
   <section className="project-preview">
     <Link to={`/${title}`}>
-      <figure>
+      <figure className="rock-boat">
         <Image fluid={image} alt={title}/>
       </figure>
     </Link>

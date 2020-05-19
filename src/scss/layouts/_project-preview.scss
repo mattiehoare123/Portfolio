@@ -4,22 +4,29 @@
   figure, a, h2, p {
     margin-bottom: 7px;
   }
+  &:first-of-type {
+    figure {
+      background-color: $clr-blue;
+      animation: floatPortfolio 4s ease-in-out infinite;
+    }
+  }
   /*
   As data is is pulled from graphql target each
   article to change figure background-color
   */
   &:nth-of-type(2) {
     figure {
-      background-color: #E9785D!important;
+      animation: floatDoggie 4s ease-in-out infinite;
+      background-color: #E9785D;
     }
   }
 
   &:nth-of-type(3) {
     figure {
-      background-color: #C9C9C9!important;
+      animation: floatDoggie 4s ease-in-out infinite;
+      background-color: #C9C9C9;
     }
   }
-
 
   figure {
     @include flex;
@@ -28,12 +35,17 @@
       height: 300px;
     }
     border-radius: .5em;
-
-    &:first-child {
-      background-color: $clr-blue;
+    //Make the image go bigger on hover
+    &:hover {
+      .gatsby-image-wrapper {
+        height: 250px;
+        width: 350px;
+      }
     }
     /*Preview Project Image*/
     .gatsby-image-wrapper {
+      transition-property: all;
+      transition-duration: 1s;
       height: 150px;
       width: 250px;
       @include laptop {
@@ -41,6 +53,23 @@
         width: 300px;
       }
     }
+  }
+
+  //Keyframes for floating portfolio previews
+  @keyframes floatPortfolio  {
+    0% {transform: translatey(0px);}
+    25% {transform: translatey(-2px) rotate(-0.5deg);}
+    50% {transform: translatey(-2px) rotate(0deg);}
+    75% {transform: translatey(2px) rotate(0.5deg);}
+    100% {transform: translatey(0px) rotate(0deg);}
+  }
+
+  @keyframes floatDoggie  {
+    0% {transform: translatey(0px);}
+    25% {transform: translatey(-2px) rotate(0.5deg);}
+    50% {transform: translatey(-2px) rotate(0deg);}
+    75% {transform: translatey(2px) rotate(-0.5deg);}
+    100% {transform: translatey(0px) rotate(0deg);}
   }
 
   h2 {

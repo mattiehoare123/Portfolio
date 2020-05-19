@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from 'gatsby';
 import Image from "gatsby-image";
 import BackgroundImage from 'gatsby-background-image';
+import { Animated } from "react-animated-css";
 
 const Project = ({
   title,
@@ -26,15 +27,17 @@ const Project = ({
           className={'project-hero'}
           fluid={background}
         >
-        <div>
+        <Animated animationIn="fadeInLeft" isVisible={true}>
           <h1>{title}</h1>
           <p>{software}</p>
           <a href="www.example.com">
             <button className="view-live">View Live</button>
           </a>
-        </div>
+        </Animated>
       </BackgroundImage>
-      <Image fluid={image} alt={title} className="laptop"/>
+      <Animated animationIn="fadeInRight" isVisible={true} className="laptop">
+        <Image fluid={image} alt={title}/>
+      </Animated>
     </section>
     <section className="project-process">
       <h2>Outline</h2>

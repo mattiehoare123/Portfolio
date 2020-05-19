@@ -14,7 +14,7 @@ const Navigation = () => {
             <Link to="/portfolio" activeClassName="active">Portfolio</Link>
           </li>
           <li>
-            <a href="../images/Matthew-Hoare-CV.pdf" target="_target">CV</a>
+            <a href="../images/Matthew-Hoare-CV.pdf"  download>CV</a>
           </li>
           <li>
             <Link to="/contact" activeClassName="active">Contact</Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import {graphql} from 'gatsby';
+import {Helmet} from "react-helmet";
 import Layout from '../components/layout';
 import Project from '../components/project';
 
@@ -54,23 +55,30 @@ const ProjectTemplate = ({data}) => {
   const fidelityDescription = project.fidelityDescription
 
   return (
-    <Layout>
-      <Project
-        title={title}
-        outline={outline}
-        image={image}
-        software={software}
-        background={background}
-        personaTitle={personaTitle}
-        personaDescription={personaDescription}
-        sketchTitle={sketchTitle}
-        sketchDescription={sketchDescription}
-        wireframeTitle={wireframeTitle}
-        wireframeDescription={wireframeDescription}
-        fidelityTitle={fidelityTitle}
-        fidelityDescription={fidelityDescription}
-      />
-    </Layout>
+    <React.Fragment>
+      <Helmet>
+        <title>{title}</title>
+        {/*Needed to use the animate CSS library*/}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+      </Helmet>
+        <Layout>
+          <Project
+            title={title}
+            outline={outline}
+            image={image}
+            software={software}
+            background={background}
+            personaTitle={personaTitle}
+            personaDescription={personaDescription}
+            sketchTitle={sketchTitle}
+            sketchDescription={sketchDescription}
+            wireframeTitle={wireframeTitle}
+            wireframeDescription={wireframeDescription}
+            fidelityTitle={fidelityTitle}
+            fidelityDescription={fidelityDescription}
+          />
+        </Layout>
+    </React.Fragment>
   )
 }
 

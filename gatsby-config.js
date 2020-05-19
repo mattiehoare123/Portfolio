@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
