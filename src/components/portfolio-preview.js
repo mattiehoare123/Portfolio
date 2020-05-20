@@ -15,7 +15,7 @@ const PortfolioPreview = ({id, title, outline, image}) => (
     <p>{outline}</p>
     <Link to={`/${title}`}>
       {/*Read more arrow button*/}
-      <button class="read-more">Read more &rarr;</button>
+      <button class="read-more">Read more <span>&rarr;</span></button>
     </Link>
   </section>
 )

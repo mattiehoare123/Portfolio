@@ -1,4 +1,15 @@
 .read-more {
   border: none;
   background: none;
+  //On hover move the arrow to the right 
+  &:hover {
+    span {
+      position: relative;
+      left: 5px;
+    }
+  }
+  span {
+    transition: all;
+    transition-duration: 5s;
+  }
 }

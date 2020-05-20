@@ -9,6 +9,9 @@
       background-color: $clr-blue;
       animation: floatPortfolio 4s ease-in-out infinite;
     }
+    h2:hover {
+      color: $clr-blue;
+    }
   }
   /*
   As data is is pulled from graphql target each
@@ -17,14 +20,20 @@
   &:nth-of-type(2) {
     figure {
       animation: floatDoggie 4s ease-in-out infinite;
-      background-color: #E9785D;
+      background-color: $clr-orange;
+    }
+    h2:hover {
+      color: $clr-orange;
     }
   }
 
   &:nth-of-type(3) {
     figure {
       animation: floatDoggie 4s ease-in-out infinite;
-      background-color: #C9C9C9;
+      background-color: $clr-grey;
+    }
+    h2:hover {
+      color: $clr-grey;
     }
   }
 
@@ -75,10 +84,5 @@
   h2 {
     font-size: 2rem;
     color: $clr-txt-black;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
-
 }

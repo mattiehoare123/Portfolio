@@ -5,4 +5,9 @@
   width: 100px;
   border: none;
   border-radius: .2em;
+  &:hover {
+    background: $clr-white;
+    color: $clr-blue;
+    border: 1px solid $clr-blue;
+  }
 }
