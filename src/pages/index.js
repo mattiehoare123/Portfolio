@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const IndexPage = () => {
+  {/*Using graphql to get the image and optimize it*/}
   const data = useStaticQuery(graphql`
     query {
       me: file(relativePath: { eq: "me.jpg" }) {
@@ -21,6 +22,8 @@ const IndexPage = () => {
     <React.Fragment>
       <Helmet>
         <title>Matthew Hoare</title>
+        {/*Needed to use the animate CSS library*/}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
       </Helmet>
       <Layout>
         {/*Hero*/}
@@ -45,7 +48,7 @@ const IndexPage = () => {
               coding, I like to DJ and play a few 80’s classic’s. I guess that may save you some money off your next Christmas party.
             </p>
           </section>
-          <div data-sal="slide-right" data-sal-duration="500">
+          <div data-sal="slide-right" data-sal-duration="500" >
             <Img fluid={data.me.childImageSharp.fluid} />
           </div>
         </article>

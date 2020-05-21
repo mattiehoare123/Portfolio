@@ -15,6 +15,9 @@ body {
 
 main {
   margin-bottom: 50px;
+  //Make footer stick at the bottom of the page
+  grid-template-rows: auto auto 1fr;
+  min-height: 100vh;
 }
 
 h1 {
@@ -49,6 +52,7 @@ p, label, button, input, textarea, li, a {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 

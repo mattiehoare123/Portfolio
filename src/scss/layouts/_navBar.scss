@@ -1,18 +1,17 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   padding: 1em 0;
-  width: 100%;
   @include container;
+  @include ipad {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 
   nav {
-    display: none;
-
-    @include ipad {
-      display: block;
-    }
-
+    margin: 1em 0 .5em;
     ul {
       display: grid;
       grid-auto-flow: column;
@@ -28,15 +27,7 @@ header {
       }
     }
   }
-
-  .menu-icon {
-    @include ipad {
-      display: none;
-    }
-
-
-  }
-
+  //When link is active
   .active {
     border-bottom: 8px solid $clr-blue;
   }

@@ -1,10 +1,15 @@
-aside {
+section {
   svg {
+    transition: all;
+    transition-duration: 0.5s;
     display: block;
     height: 25px;
     @include laptop {
       height: 35px;
     }
     margin-bottom: 1em;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }

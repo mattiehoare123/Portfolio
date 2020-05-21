@@ -15,15 +15,22 @@ const Contact = () => {
       <Layout>
         <div className="contact">
           <h1>Contact</h1>
-          <form>
+          {/*Form will be sent to netlify dashboard*/}
+          <form name="contact" method="post" data-netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="contact" value="contact"/>
+            {/*Name*/}
             <label htmlFor="name">Name</label>
             <input id="name" type="text"/>
+            {/*Email*/}
             <label htmlFor="email">Email</label>
             <input id="email" type="email"/>
+            {/*Message*/}
             <label htmlFor="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            {/*Submit*/}
             <button type="submit" className="submit">Send</button>
           </form>
+          {/*Contact Details*/}
           <article className="contact-info">
             <section>
               <a href="tel:07887770657">

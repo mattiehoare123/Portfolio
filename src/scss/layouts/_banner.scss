@@ -1,15 +1,18 @@
 .banner {
   display: grid;
-  grid-template-columns: 35px auto 35px;
-  @include laptop {
+  grid-template-columns: 10px auto 10px;
+  @include ipad {
     grid-template-columns: 5vw 90vw 5vw;
   }
   align-items: center;
-
+  //Banner content
   p {
     grid-column: 2/3;
     background: $clr-light-grey;
     height: 40vh;
+    //When resizing browser to make the trainsition of height gradual
+    transition: all;
+    transition-duration: 2s;
     @include laptop {
       height: 80vh;
       font-size: 2.5rem;
@@ -22,26 +25,27 @@
     margin: 0 auto;
 
     a {
-      display: flex;
+      //Make buttons display next to each other
+      display: inline;
     }
     // To center profile in the middle
     div {
       margin: 0 auto;
     }
-
+    //Matthew Hoare
     h1 {
       color: $clr-txt-black;
       font-size: 3rem;
       @include laptop {
         font-size: 7rem;
       }
-
+      //Matt in blue
       span {
         padding: 0 .1em;
         background: $clr-blue;
         color: $clr-white;
       }
-
+      //Resets
       &::after {
         content: '';
         width: 0px;
@@ -50,13 +54,15 @@
       }
     }
   }
-
-  aside {
-    display: flex;
+  //Social Media Icons
+  section {
+    //Hide social media icons on mobile devices
+    display: none;
     flex-direction: column;
     align-items: center;
 
     @include ipad {
+      display: block;
       top: 0px;
       grid-column: 3/4;
     }

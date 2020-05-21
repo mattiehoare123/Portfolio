@@ -26,6 +26,7 @@ const Project = ({
           className={'project-hero'}
           fluid={background}
         >
+        {/*Title, Software & CTA*/}
         <Animated animationIn="fadeInLeft" isVisible={true}>
           <h1>{title}</h1>
           <p>{software}</p>
@@ -34,10 +35,12 @@ const Project = ({
           </a>
         </Animated>
       </BackgroundImage>
+      {/*Laptop Screen*/}
       <Animated animationIn="fadeInRight" isVisible={true} className="laptop">
         <Image fluid={image} alt={title}/>
       </Animated>
     </section>
+    {/*Dev Process*/}
     <section className="project-process">
       <h2>Outline</h2>
       <p>{outline}</p>

@@ -1,10 +1,10 @@
 .about-me {
+  @include container;
   padding-top: 2em;
   @include ipad {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    @include container;
+    grid-column-gap: 50px;
   }
     @include laptop {
       grid-template-columns: 1fr 2fr;
@@ -25,8 +25,8 @@
   }
 
   div {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 85vw;
     @include laptop {
       height: 400px;
       width: 400px;
@@ -35,10 +35,13 @@
     position: relative;
 
     @include ipad {
+      //Restting from mobile width
+      width: 100%;
+      height: 45vh;
       order: 0;
       grid-column: 1/2;
     }
-
+    //Sqaure behind picture
     &::after {
       content: '';
       display: inline-block;

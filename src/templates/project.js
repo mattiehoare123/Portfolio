@@ -37,7 +37,7 @@ export const query = graphql`
   }
 `;
 
-
+{/*Getting the data from json and assign each value a variable*/}
 const ProjectTemplate = ({data}) => {
   const project = data.projectsJson;
   const title = project.title;
@@ -62,6 +62,7 @@ const ProjectTemplate = ({data}) => {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
       </Helmet>
         <Layout>
+          {/*Passing all the props to the project component*/}
           <Project
             title={title}
             outline={outline}

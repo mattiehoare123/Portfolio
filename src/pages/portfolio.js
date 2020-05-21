@@ -39,6 +39,7 @@ const Portfolio = () => {
             const title = project.title;
             const image = project.image.childImageSharp.fluid;
             const outline = project.outline;
+            {/*Passing data as props to component*/}
 
             return (
                 <PortfolioPreview
