@@ -10,15 +10,41 @@ export const query = graphql`
     projectsJson(title: {eq: $title}) {
       title
       outline
+      challenge
       software
-      personaTitle
+      url
       personaDescription
-      sketchTitle
       sketchDescription
-      wireframeTitle
       wireframeDescription
-      fidelityTitle
       fidelityDescription
+      sketchImage {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      fidelityImage {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      wireframeImage {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      personaImage {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       background {
         childImageSharp {
           fluid {
@@ -42,17 +68,19 @@ const ProjectTemplate = ({data}) => {
   const project = data.projectsJson;
   const title = project.title;
   const outline = project.outline;
+  const url = project.url;
+  const challenge = project.challenge
   const image = project.image.childImageSharp.fluid;
   const software = project.software;
   const background = project.background.childImageSharp.fluid;
-  const personaTitle = project.personaTitle;
   const personaDescription = project.personaDescription;
-  const sketchTitle = project.sketchTitle;
+  const personaImage = project.personaImage.childImageSharp.fluid;
   const sketchDescription = project.sketchDescription;
-  const wireframeTitle = project.wireframeTitle;
+  const sketchImage = project.sketchImage.childImageSharp.fluid;
   const wireframeDescription = project.wireframeDescription
-  const fidelityTitle = project.fidelityTitle
+  const wireframeImage = project.wireframeImage.childImageSharp.fluid;
   const fidelityDescription = project.fidelityDescription
+  const fidelityImage = project.fidelityImage.childImageSharp.fluid;
 
   return (
     <React.Fragment>
@@ -66,17 +94,19 @@ const ProjectTemplate = ({data}) => {
           <Project
             title={title}
             outline={outline}
+            challenge={challenge}
+            url={url}
             image={image}
             software={software}
             background={background}
-            personaTitle={personaTitle}
             personaDescription={personaDescription}
-            sketchTitle={sketchTitle}
+            personaImage={personaImage}
             sketchDescription={sketchDescription}
-            wireframeTitle={wireframeTitle}
+            sketchImage={sketchImage}
             wireframeDescription={wireframeDescription}
-            fidelityTitle={fidelityTitle}
+            wireframeImage={wireframeImage}
             fidelityDescription={fidelityDescription}
+            fidelityImage={fidelityImage}
           />
         </Layout>
     </React.Fragment>

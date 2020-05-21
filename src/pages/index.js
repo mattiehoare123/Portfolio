@@ -48,6 +48,7 @@ const IndexPage = () => {
               coding, I like to DJ and play a few 80’s classic’s. I guess that may save you some money off your next Christmas party.
             </p>
           </section>
+          {/*Picture of me*/}
           <div data-sal="slide-right" data-sal-duration="500" >
             <Img fluid={data.me.childImageSharp.fluid} />
           </div>

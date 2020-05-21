@@ -6,8 +6,9 @@ import Footer from "../components/footer"
 const Layout = ({children}) => {
   return (
     <React.Fragment>
+      {/*These will appear on every page*/}
       <Header/>
-      <main>{children}</main>
+      <main>{children}</main>{/*Content goes in here*/}
       <Footer/>
     </React.Fragment>
   )

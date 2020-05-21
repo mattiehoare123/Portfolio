@@ -13,6 +13,7 @@ const Portfolio = () => {
             id
             title
             outline
+            challenge
             image {
               childImageSharp {
                 fluid {
@@ -38,14 +39,13 @@ const Portfolio = () => {
           {projects.map(({node: project}) => {
             const title = project.title;
             const image = project.image.childImageSharp.fluid;
-            const outline = project.outline;
+            const challenge = project.challenge;
             {/*Passing data as props to component*/}
-
             return (
                 <PortfolioPreview
                   title={title}
                   image={image}
-                  outline={outline}
+                  challenge={challenge}
                   />
               );
           })}

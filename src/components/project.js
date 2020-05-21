@@ -7,16 +7,18 @@ const Project = ({
   title,
   outline,
   image,
+  url,
+  challenge,
   software,
   background,
-  personaTitle,
   personaDescription,
-  sketchTitle,
+  personaImage,
   sketchDescription,
-  wireframeTitle,
+  sketchImage,
   wireframeDescription,
-  fidelityTitle,
-  fidelityDescription
+  wireframeImage,
+  fidelityDescription,
+  fidelityImage
 }) => (
   <React.Fragment>
     <section className="project-header">
@@ -30,7 +32,7 @@ const Project = ({
         <Animated animationIn="fadeInLeft" isVisible={true}>
           <h1>{title}</h1>
           <p>{software}</p>
-          <a href="www.example.com">
+          <a href={url} target="__blank">
             <button className="view-live">View Live</button>
           </a>
         </Animated>
@@ -42,16 +44,25 @@ const Project = ({
     </section>
     {/*Dev Process*/}
     <section className="project-process">
-      <h2>Outline</h2>
+      <h2>Overview</h2>
       <p>{outline}</p>
-      <h2>{personaTitle}</h2>
+      <h2>Challenge</h2>
+      <p>{challenge}</p>
+      <h2>Understanding The User</h2>
       <p>{personaDescription}</p>
-      <h2>{sketchTitle}</h2>
+      <Image fluid={personaImage} alt={title} className="persona"/>
+      <h2>Ideation</h2>
       <p>{sketchDescription}</p>
-      <h2>{wireframeTitle}</h2>
+      <Image fluid={sketchImage} alt={title} className="sketch"/>
+      <h2>Wireframes</h2>
       <p>{wireframeDescription}</p>
-      <h2>{fidelityTitle}</h2>
+      <Image fluid={wireframeImage} alt={title} className="wireframe"/>
+      <h2>Visual Desgins</h2>
       <p>{fidelityDescription}</p>
+      <Image fluid={fidelityImage} alt={title} className="fidelity"/>
+      <a href={url} target="__blank">
+        <button className="view-live view-live-btm">View Live</button>
+      </a>
     </section>
   </React.Fragment>
 )
